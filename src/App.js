@@ -1,24 +1,46 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Navbar from './components/Navbar';
+import FrontScreen from './components/FrontScreen';
+import About from './components/About';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+import { useRef } from 'react';
+import Footer from './components/Footer';
 
 function App() {
+
+
+  const refList = useRef([])
+
+  const cards = document.querySelectorAll(".cardClass");
+  
+  const observer = new IntersectionObserver(enteriesList =>{
+    
+    enteriesList.forEach(entry =>{
+      entry.target.classList.toggle("show",entry.isIntersecting);
+    })
+
+
+
+  });
+
+  cards.forEach(card=>{
+    observer.observe(card);
+  })
+
+// console.log("hello")
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar refList ={refList}/>
+    <FrontScreen />
+    <About/>
+    <Skills/>
+<Contact />
+<Footer/>
+
+    </>
   );
 }
 
