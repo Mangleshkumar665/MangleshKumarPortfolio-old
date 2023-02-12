@@ -35,6 +35,7 @@ body {
   box-sizing: border-box;
   overflow-x: hidden;
   font-family: 'Lato', sans-serif;
+  
 
 }
 
@@ -44,29 +45,29 @@ body {
 
 }
 
-.navbar-css-op {
+.navbar-body{
   opacity: 0.8;
+  background-color: rgba(248, 250, 252, 0.4) ;
+  /* background-color: red; */
 
 }
 
 
-.text-hello {
+.text-hello{
 
   font-family: 'Lato', sans-serif;
-  /* border: 2px solid black; */
+  
 }
 
 .text-name {
   font-weight: 400;
   font-family: "poppins";
-  /* border: 2px solid black; */
 
 }
 
 .text-caption {
   font-weight: 400;
   font-family: "Montserrat";
-  /* border: 2px solid black; */
 
 }
 
@@ -80,8 +81,6 @@ body {
   z-index: 2;
   background-image: url("../src/images/first.jpg");
   flex-direction: column;
-
-
 }
 
 .heading-content h1 {
@@ -104,24 +103,14 @@ body {
 
 
 .temp {
-
   border: 2px solid red;
-
-  /* width: 250px;
-  
-  height: 250px; */
-
 }
 
 
 
 .about-Col1 {
-
   width: 100%;
   height: 25px;
-
-
-
 }
 
 .about-secondCard {
@@ -157,23 +146,19 @@ body {
 
 .wannaKnow {
   margin: 25px;
-  /* border: 1px solid black; */
-  /* background-image: linear-gradient(#BFF7D0,#DEFAD2  ,white); */
-
   box-shadow: 0 4px 12px rgba(44, 44, 44, 0.5);
 }
-
-
 .knowMore:hover {
   background-color: #1BA94C;
   border: none;
 }
 
+
+
 .col2-text {
   font-family: 'Lato', sans-serif;
   font-weight: 800;
 }
-
 .col2-sentence {
   font-family: 'poppins', sans-serif;
   font-size: 1em;
@@ -183,18 +168,12 @@ body {
 .skills-cols {
   height: 10rem;
   width: fit-content;
-  /* border: 1px solid rgb(111, 111, 111); */
   border-radius: 5px;
   margin: 15px;
   font-family: "lato", sans-serif;
   font-weight: 800;
   box-shadow: 0 4px 12px rgba(44, 44, 44, 0.5);
-
-
   background: linear-gradient(62deg, #8EC5FC 0%, #bb86eb 100%);
-
-
-
   background-size: 400% 400%;
   animation: animate 4s ease infinite;
 
@@ -211,14 +190,13 @@ body {
   font-family: "lato", sans-serif;
   font-weight: 800;
   box-shadow: 0 4px 12px rgba(44, 44, 44, 0.5);
-
-
   background: linear-gradient(62deg, #8EC5FC 0%, #bb86eb 100%);
-
-
-
   background-size: 400% 400%;
   animation: animate 4s ease infinite;
+
+}
+.cardClass{
+  /* background-image: url("../src/images/background2.jpg"); */
 
 }
 
@@ -226,41 +204,23 @@ body {
   0% {
     background-position: 0% 50%;
   }
-
   50% {
     background-position: 100% 50%;
   }
-
   100% {
     background-position: 0 50%;
   }
-
-
-
 }
 
 
 .skills-cols:hover {
   background-color: #B1F6CA;
   border: None;
-
   box-shadow: 0 12px 24px rgba(44, 44, 44, 0.5);
 
 }
-
-
-.certificates {
-
-
-}
-
-
-
 .icons-class {
-
   height: 8vh;
-
-
 }
 
 .icons-items {
@@ -380,10 +340,6 @@ body {
 }
 
 
-.skill-parent{
-  /* border: 2px solid lightsalmon; */
-  
-}
 .skills-language{
   /* border: 2px solid blue; */
   width: 50%;
@@ -420,12 +376,6 @@ body {
   margin-left: 10%;
 }
 
-.contact-cards{
-  
-
-
-}
-
 .contact-cards:hover{
   box-shadow: 0 15px 25px rgba(175, 175, 175, 0.5);
 
@@ -440,6 +390,21 @@ body {
   padding: 0px;
 }
   
+
+.error-box{
+  border: 2px solid red ;
+  color: red;
+}
+
+.error-text{
+  
+  color: red;
+}
+
+
+
+
+
 
 @media only screen and (max-width: 600px) {
 
@@ -534,6 +499,7 @@ body {
   font-size:100%;
 
 }
+
 
 
 

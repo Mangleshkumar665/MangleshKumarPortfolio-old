@@ -1,12 +1,23 @@
-import Aos from 'aos';
+import aos from 'aos';
 import React, { useEffect } from 'react'
+import Form from './Form';
 
 
 
 export default function Contact() {
 
+
+
+
+
+
+
+
+
+
+    
     useEffect(() => {
-        Aos.init({duration:1000});
+        aos.init({duration:1000});
     }, [])
 
     return (
@@ -21,7 +32,7 @@ export default function Contact() {
             <div className='row  contact-parent2 '>
 
 
-                <div className='col-4  d-flex flex-column align-items-center justify-content-center  m-4 contact-card ' data-Aos="fade-right">
+                <div className='col-4  d-flex flex-column align-items-center justify-content-center  m-4 contact-card ' data-aos="fade-right">
                     <div className="card w-75 contact-cardparent">
                         <div className="card-body d-flex flex-row flex-wrap  contact-cards">
                             <div className="flex-shrink-0">
@@ -49,7 +60,7 @@ export default function Contact() {
                     <div className="card w-75 mt-4 contact-cardparent contact-cardparent ">
                         <div className="card-body d-flex flex-row flex-wrap  contact-cards">
                             <div className="flex-shrink-0">
-                                <i class="fa-solid fa-location-dot m-2 fa-2xl"></i>
+                                <i className="fa-solid fa-location-dot m-2 fa-2xl"></i>
                             </div>
 
                             <h5 className="card-title contact-cardtext">Gorakhpur ,Uttar Pradesh </h5>
@@ -65,33 +76,7 @@ export default function Contact() {
                     <div className='col-sm-12 col-sm-offset-4 my-3 w-75 contact-info '>
                         <div className=' '>
 
-                            <form >
-                                <div className="mb-3">
-                                    <label htmlFor="exampleInputEmail1" className="form-label h5 contact-info ">Name</label>
-                                    <input type="text" className="form-control contact-info" />
-
-                                </div>
-
-                                <div className="mb-3">
-                                    <label htmlFor="exampleInputEmail1" className="form-label h5 contact-info" >E-mail</label>
-                                    <input type="email" className="form-control contact-info" />
-
-                                </div>
-
-                                <div className="mb-3">
-                                    <label htmlFor="exampleInputEmail1" className="form-label h5 contact-info">Number</label>
-                                    <input type="text" className="form-control contact-info" />
-
-                                </div>
-
-                                <div className="mb-3">
-                                    <label htmlFor="exampleFormControlTextarea1" className="form-label h5 contact-info "> Write Your Message here  </label>
-                                    <textarea className="form-control contact-info" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                </div>
-
-
-                                <button type="submit" className="btn  h5 knowMore border  " >Submit</button>
-                            </form>
+                            <Form/>
 
                         </div>
                     </div>

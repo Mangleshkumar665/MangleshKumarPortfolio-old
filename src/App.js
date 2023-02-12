@@ -14,31 +14,31 @@ function App() {
   const refList = useRef([])
 
   const cards = document.querySelectorAll(".cardClass");
-  
-  const observer = new IntersectionObserver(enteriesList =>{
-    
-    enteriesList.forEach(entry =>{
-      entry.target.classList.toggle("show",entry.isIntersecting);
+
+  const observer = new IntersectionObserver(enteriesList => {
+
+    enteriesList.forEach(entry => {
+      entry.target.classList.toggle("show", entry.isIntersecting);
     })
 
 
 
   });
 
-  cards.forEach(card=>{
+  cards.forEach(card => {
     observer.observe(card);
   })
 
-// console.log("hello")
+  // console.log("hello")
 
   return (
     <>
-    <Navbar refList ={refList}/>
-    <FrontScreen />
-    <About/>
-    <Skills/>
-<Contact />
-<Footer/>
+      <Navbar refList={refList} />
+      <FrontScreen />
+      <About />
+      <Skills />
+      <Contact />
+      <Footer />
 
     </>
   );

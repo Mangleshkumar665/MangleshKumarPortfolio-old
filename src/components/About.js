@@ -21,7 +21,7 @@ useEffect(() => {
 
 
     return (
-        <div className="cardClass"  >
+        <div className="cardClass "  >
 
 
 

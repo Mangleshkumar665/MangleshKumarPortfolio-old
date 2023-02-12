@@ -8,7 +8,7 @@ import quiz from "../images/quizapp/2.jpeg"
 import leetcode from "../images/leetcode.png"
 import hackerRank from "../images/hackerrank.png"
 import codechef from "../images/codechef.png"
-import Aos from 'aos'
+import aos from 'aos'
 
 
 
@@ -20,7 +20,7 @@ export default function CodingSkilljglogos(props) {
   const codingStyle = { "display": props.codingDisplay }
 
   useEffect(() => {
-    Aos.init({duration:1000});
+    aos.init({duration:1000});
 }, [])
 
 
@@ -239,17 +239,20 @@ export default function CodingSkilljglogos(props) {
                     Languages used
                   </h4>
                   <div>
-                    <i className="bi bi-filetype-html"></i>
+                  <i className="fa-solid fa-code  mx-1"></i>
+
                     Html/Css
                   </div>
 
                   <div>
-                    <i className="bi bi-filetype-js"></i>
+                  <i className="fa-brands fa-square-js mx-2"></i>
+                    
 
                     Javascript
                   </div>
                   <div>
-                    <i className="bi bi-filetype-jsx"></i>
+                  <i className="fa-brands fa-react m-1 "></i>
+                    
                     react
                   </div>
 
@@ -272,12 +275,14 @@ export default function CodingSkilljglogos(props) {
                     Languages used
                   </h4>
                   <div>
-                    <i className="bi bi-filetype-html"></i>
+                  <i className="fa-solid fa-code  mx-1"></i>
+
                     Html/Css
                   </div>
 
                   <div>
-                    <i className="bi bi-filetype-js"></i>
+                  <i className="fa-brands fa-square-js mx-2"></i>
+                    
 
                     Javascript
                   </div>
@@ -300,17 +305,20 @@ export default function CodingSkilljglogos(props) {
                     Languages used
                   </h4>
                   <div>
-                    <i className="bi bi-filetype-html"></i>
+                  <i className="fa-solid fa-code  mx-2"></i>
+
                     Html/Css
                   </div>
 
                   <div>
-                    <i className="bi bi-filetype-js"></i>
+                  <i className="fa-brands fa-square-js fa-lg mx-2"></i>
+
 
                     Javascript
                   </div>
                   <div>
-                    <i className="bi bi-filetype-jsx"></i>
+                  <i className="fa-brands fa-react fa-lg mx-2"></i>
+
                     react
                   </div>
 
@@ -341,17 +349,17 @@ export default function CodingSkilljglogos(props) {
                     Languages used
                   </h4>
                   <div>
-                    <i className="bi bi-filetype-html"></i>
+                  <i className="fa-solid fa-code  mx-1"></i>
                     Html/Css
                   </div>
 
                   <div>
-                    <i className="bi bi-filetype-js"></i>
+                  <i className="fa-brands fa-square-js mx-2"></i>
 
                     Javascript
                   </div>
                   <div>
-                    <i className="bi bi-filetype-jsx"></i>
+                  <i className="fa-brands fa-react mx-2"></i>
                     react
                   </div>
                   <p className="card-text mt-1">A Basic Vanilla Javascript Fronted Based Project </p>
