@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MangleshKumarPortfolio/static/css/main.fb78c970.css",
-    "main.js": "/MangleshKumarPortfolio/static/js/main.32db52a0.js",
+    "main.css": "/MangleshKumarPortfolio/static/css/main.5f5a8068.css",
+    "main.js": "/MangleshKumarPortfolio/static/js/main.744ae6c5.js",
     "static/js/787.1ed0c42c.chunk.js": "/MangleshKumarPortfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/3.jpeg": "/MangleshKumarPortfolio/static/media/3.ab8de683f7600ac7f5c7.jpeg",
     "static/media/bootstrap-icons.woff?": "/MangleshKumarPortfolio/static/media/bootstrap-icons.4133309eaf232a933735.woff",
@@ -13,12 +13,12 @@
     "static/media/leetcode.png": "/MangleshKumarPortfolio/static/media/leetcode.c79f333b12595d3eec8f.png",
     "static/media/codechef.png": "/MangleshKumarPortfolio/static/media/codechef.9a681456b0fddc7b63a0.png",
     "index.html": "/MangleshKumarPortfolio/index.html",
-    "main.fb78c970.css.map": "/MangleshKumarPortfolio/static/css/main.fb78c970.css.map",
-    "main.32db52a0.js.map": "/MangleshKumarPortfolio/static/js/main.32db52a0.js.map",
+    "main.5f5a8068.css.map": "/MangleshKumarPortfolio/static/css/main.5f5a8068.css.map",
+    "main.744ae6c5.js.map": "/MangleshKumarPortfolio/static/js/main.744ae6c5.js.map",
     "787.1ed0c42c.chunk.js.map": "/MangleshKumarPortfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb78c970.css",
-    "static/js/main.32db52a0.js"
+    "static/css/main.5f5a8068.css",
+    "static/js/main.744ae6c5.js"
   ]
 }
