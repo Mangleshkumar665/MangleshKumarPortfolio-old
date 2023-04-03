@@ -1,9 +1,25 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-
+import emailjs from '@emailjs/browser';
 const Form = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_qxzs36k', 'template_bvcpq28', form.current, 'N9HBSR1V_2VGt18XC')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
+
+
+
   const schema = yup.object().shape({
     name: yup.string().min(1, { text: "Required" }),
     email: yup.string().email().required("Required"),
@@ -30,7 +46,7 @@ const Form = () => {
 
   };
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form ref ={form} onSubmit={handleSubmit(onSubmit)}>
       {submitAlert === "enabled" ? (
         <div class="alert alert-success" role="alert">
           Thanks for the Response .
@@ -58,7 +74,7 @@ const Form = () => {
             errors.name?.message.text ? "error-box" : ""
           }`}
           placeholder="enter your name here "
-          {...register("name")}
+          {...register("name")} name="from_name"
         />
       </div>
 
@@ -77,9 +93,9 @@ const Form = () => {
           type="email"
           className={`form-control contact-info  ${
             errors.email?.message ? "error-box" : ""
-          }`}
+          }`} 
           placeholder="enter your name here"
-          {...register("email")}
+          {...register("email")} name="email_id"
         />
       </div>
 
@@ -97,9 +113,9 @@ const Form = () => {
           type="text"
           className={`form-control contact-info ${
             errors.number?.message ? "error-box" : ""
-          }`}
+          }`} 
           placeholder=" enter your Phone Number..."
-          {...register("number")}
+          {...register("number")} name="mob_number"
         />
       </div>
 
@@ -118,13 +134,13 @@ const Form = () => {
             errors.message?.message ? "error-box" : ""
           }`}
           id="exampleFormControlTextarea1"
-          rows="3"
+          rows="3" name="message"
           placeholder="enter your message here ..."
           {...register("message")}
         ></textarea>
       </div>
 
-      <input type="submit" className="btn  h5 knowMore border  " />
+      <input type="submit" className="btn  h5 knowMore border  "  onClick={sendEmail}/>
     </form>
   );
 };

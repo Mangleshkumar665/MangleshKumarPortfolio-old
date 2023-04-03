@@ -22,8 +22,6 @@ export default function Contact() {
 
     return (
         <div className=' row'>
-
-
             <div className="display-4 text-center p-2    ">Get in Touch
             <hr className="hr hr-blurry  mx-5  " />
             

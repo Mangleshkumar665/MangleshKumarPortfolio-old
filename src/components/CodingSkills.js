@@ -17,7 +17,6 @@ export default function CodingSkilljglogos(props) {
 
 
 
-  const codingStyle = { "display": props.codingDisplay }
 
   useEffect(() => {
     aos.init({duration:1000});
@@ -25,7 +24,7 @@ export default function CodingSkilljglogos(props) {
 
 
   return (
-    <div className="coding-class my-5 " style={codingStyle}>
+    <div className="coding-class my-5   " >
 
       <div className=" container px-4   ">
 
@@ -106,7 +105,7 @@ export default function CodingSkilljglogos(props) {
                       <h5 className="card-title  stats-superChild">Problems Solved </h5>
 
                       <div className='col-md-4 d-flex justify-content-center align-items-center' data-aos="fade-up">
-                        125+
+                        150+
                       </div>
 
 
@@ -367,22 +366,9 @@ export default function CodingSkilljglogos(props) {
               </div>
 
             </div>
-
-
-
           </div>
-
-
         </div>
-
-
-
-
       </div>
-
-
-
-
     </div>
   )
 }
