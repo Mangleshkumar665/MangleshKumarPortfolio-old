@@ -6,24 +6,23 @@ import emailjs from '@emailjs/browser';
 const Form = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  const sendEmail = () => {
 
     emailjs.sendForm('service_qxzs36k', 'template_bvcpq28', form.current, 'N9HBSR1V_2VGt18XC')
       .then((result) => {
-          console.log(result.text);
+          console.log(result.text,"texting");
       }, (error) => {
           console.log(error.text);
       });
   };
 
 
-
+  console.log(form.current)
 
   const schema = yup.object().shape({
     name: yup.string().min(1, { text: "Required" }),
-    email: yup.string().email().required("Required"),
-    number: yup.number().min(10, "Required").required(),
+    email: yup.string().email().required(),
+    number: yup.number().min(10 ).required("Required"),
     message: yup.string().max(100).required("Required"),
   });
 
@@ -37,9 +36,9 @@ const Form = () => {
 
   const [submitAlert, setSubmitAlert] = useState("disabled");
   const onSubmit = (data) => {
-    console.log(data);
+    console.log("cherkcj");
+    sendEmail();
     setSubmitAlert("enabled");
-
     setTimeout(() => {
         setSubmitAlert("disabled");
     }, 3000);
@@ -48,7 +47,7 @@ const Form = () => {
   return (
     <form ref ={form} onSubmit={handleSubmit(onSubmit)}>
       {submitAlert === "enabled" ? (
-        <div class="alert alert-success" role="alert">
+        <div className="alert alert-success" role="alert">
           Thanks for the Response .
         </div>
       ) : (
@@ -68,21 +67,22 @@ const Form = () => {
           </strong>
         </label>
 
-        <input
+        <input name="name"
           type="text"
           className={`form-control contact-info ${
             errors.name?.message.text ? "error-box" : ""
           }`}
-          placeholder="enter your name here "
-          {...register("name")} name="from_name"
+          placeholder="enter your name here " 
+          {...register("name")} 
         />
       </div>
-
+{console.log(errors)}
       <div className="mb-3">
         <label
           htmlFor="exampleInputEmail1"
           className={`form-label h5 contact-info `}
         >
+
           E-mail
           <strong className={`${errors.email?.message ? "error-text" : ""} `}>
             {` : ${errors.email?.message ? errors.email?.message : " "}`}
@@ -90,12 +90,12 @@ const Form = () => {
         </label>
 
         <input
-          type="email"
+          type="email" name="email"
           className={`form-control contact-info  ${
             errors.email?.message ? "error-box" : ""
           }`} 
           placeholder="enter your name here"
-          {...register("email")} name="email_id"
+          {...register("email")} 
         />
       </div>
 
@@ -110,12 +110,12 @@ const Form = () => {
           </strong>
         </label>
         <input
-          type="text"
+          type="text" name="number"
           className={`form-control contact-info ${
             errors.number?.message ? "error-box" : ""
           }`} 
           placeholder=" enter your Phone Number..."
-          {...register("number")} name="mob_number"
+          {...register("number")} 
         />
       </div>
 
@@ -134,13 +134,13 @@ const Form = () => {
             errors.message?.message ? "error-box" : ""
           }`}
           id="exampleFormControlTextarea1"
-          rows="3" name="message"
+          rows="3" 
           placeholder="enter your message here ..."
           {...register("message")}
         ></textarea>
       </div>
 
-      <input type="submit" className="btn  h5 knowMore border  "  onClick={sendEmail}/>
+      <input type="submit" className="btn  h5 knowMore border  "  />
     </form>
   );
 };
