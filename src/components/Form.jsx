@@ -10,14 +10,14 @@ const Form = () => {
 
     emailjs.sendForm('service_qxzs36k', 'template_bvcpq28', form.current, 'N9HBSR1V_2VGt18XC')
       .then((result) => {
-          console.log(result.text,"texting");
+          // console.log(result.text,"texting");
       }, (error) => {
-          console.log(error.text);
+          // console.log(error.text);
       });
   };
 
 
-  console.log(form.current)
+  // console.log(form.current)
 
   const schema = yup.object().shape({
     name: yup.string().min(1, { text: "Required" }),
@@ -36,7 +36,7 @@ const Form = () => {
 
   const [submitAlert, setSubmitAlert] = useState("disabled");
   const onSubmit = (data) => {
-    console.log("cherkcj");
+    // console.log("cherkcj");
     sendEmail();
     setSubmitAlert("enabled");
     setTimeout(() => {
@@ -76,7 +76,6 @@ const Form = () => {
           {...register("name")} 
         />
       </div>
-{console.log(errors)}
       <div className="mb-3">
         <label
           htmlFor="exampleInputEmail1"

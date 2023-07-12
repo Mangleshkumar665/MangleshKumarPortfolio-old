@@ -114,7 +114,7 @@ export default function CodingSkilljglogos(props) {
                         className="col-md-4 d-flex justify-content-center align-items-center"
                         data-aos="fade-up"
                       >
-                        150+
+                        175+
                       </div>
                     </div>
                   </div>
@@ -209,9 +209,9 @@ export default function CodingSkilljglogos(props) {
             </div>
           </div>
 
-          <div className="row  projects-parent">
-            <div className="col project-card ">
-              <div className="card projects-cardImg  " data-aos="fade-right">
+          <div className="row  projects-parent ">
+            <div className="col project-card  d-flex justify-content-center   ">
+              <div className="card projects-cardImg   " data-aos="fade-right">
                 <img
                   className="card-img-top img-fluid p-3 "
                   src={todo}
@@ -243,8 +243,8 @@ export default function CodingSkilljglogos(props) {
                 </div>
               </div>
             </div>
-            <div className="col">
-              <div className="card projects-cardImg" data-aos="fade-up">
+            <div className="col  d-flex justify-content-center ">
+              <div className="card projects-cardImg " data-aos="fade-up">
                 <img
                   className="card-img-top img-fluid p-3 "
                   src={calculator}
@@ -273,7 +273,7 @@ export default function CodingSkilljglogos(props) {
               </div>
             </div>
 
-            <div className="col">
+            <div className="col d-flex justify-content-center">
               <div className="card projects-cardImg " data-aos="fade-up">
                 <img
                   className="card-img-top img-fluid p-3 "
@@ -307,7 +307,7 @@ export default function CodingSkilljglogos(props) {
               </div>
             </div>
 
-            <div className="col">
+            <div className="col d-flex justify-content-center">
               <div className="card projects-cardImg " data-aos="fade-left">
                 <img
                   className="card-img-top img-fluid p-3 "
@@ -333,7 +333,7 @@ export default function CodingSkilljglogos(props) {
                     react
                   </div>
                   <p className="card-text mt-1">
-                    A Basic Vanilla Javascript Fronted Based Project{" "}
+                    A  Javascript Fronted Based Project
                   </p>
                 </div>
               </div>

@@ -19,7 +19,6 @@ export default function FrontScreen() {
                 whileHover={{ scale: [null, 1.1, 1.1] }}
                 transition={{ duration: 0.3 }}
               >
-                {" "}
                 H
               </motion.div>
               <motion.div

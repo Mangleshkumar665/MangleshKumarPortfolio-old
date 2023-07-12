@@ -2,14 +2,10 @@ import second from "../images/second.jpg";
 
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+
+
 
 export default function About(props) {
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
 
   return (
     <div className="cardClass ">

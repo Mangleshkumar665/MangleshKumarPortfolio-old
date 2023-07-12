@@ -39,7 +39,7 @@ export default function Navbar() {
             transition={{ duration: 0.3 }}
             className="navbar-brand text-dark "
           >
-            <Link to="/" style={{ all: "unset" }}>
+            <Link to="/" className="nb-link">
               Manglesh
             </Link>
           </motion.div>
@@ -64,7 +64,7 @@ export default function Navbar() {
                   onClick={handleHomeBtn}
                   className="nav-link active text-dark"
                 >
-                  <Link to="/" style={{ all: "unset" }}>
+                  <Link to="/" className=" navbar-action" >
                     Home
                   </Link>
                 </motion.div>
@@ -75,7 +75,7 @@ export default function Navbar() {
                   whileHover={{ scale: [null, 1.1, 1.1] }}
                   transition={{ duration: 0.3 }}
                 >
-                  <Link to="/coding" style={{ all: "unset" }}>
+                  <Link to="/coding" className="navbar-action">
                     Coding
                   </Link>
                 </motion.div>
@@ -86,7 +86,7 @@ export default function Navbar() {
                   whileHover={{ scale: [null, 1.1, 1.1] }}
                   transition={{ duration: 0.3 }}
                 >
-                  <Link to="/music-production" style={{ all: "unset" }}>
+                  <Link to="/music-production"className="navbar-action">
                     Music
                   </Link>
                 </motion.div>
@@ -99,7 +99,7 @@ export default function Navbar() {
                   transition={{ duration: 0.3 }}
                   className="nav-link active text-dark"
                 >
-                  <Link to="/contact" style={{ all: "unset" }}>
+                  <Link to="/contact" className="navbar-action">
                     Contact
                   </Link>
                 </motion.div>

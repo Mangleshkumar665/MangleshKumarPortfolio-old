@@ -59,6 +59,16 @@ body {
 
 }
 
+.nb-link{
+  all:unset;
+  font-size: 30px;
+}
+
+.navbar-action{
+  all: unset;
+  font-size: 25px;
+}
+
 
 .text-hello{
 
@@ -362,17 +372,15 @@ body {
 
 }
 
-
 .projects-cardImg{
-  width: 16rem;
+  width:35vh
 }
 
 .projects-parent{
   display: flex;
   justify-content: center;
-  align-items: center;
   
-  /* border: 2px solid red; */
+  flex-wrap: wrap;
   
 }
 
@@ -465,8 +473,8 @@ body {
 .icons-wrapper{
   padding: 0px;
   position: absolute;
-  top:270px;
-  left:35vw;
+  top:510px;
+  left:70vw;
   /* border:2px solid red; */
   width:max-content;
 }
@@ -481,8 +489,68 @@ body {
   
 
 }
+.music-list-wrapper{
+  background-color: #121212;
+}
+.music-list-wrapper .caption{
+  font-size: 50px;
+  color:rgb(90, 38, 115,1);
+  margin: 10px;
+  font-family: "poppins";
+}
+
+.carousel{
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+  /* border: 2px solid black ; */
+  height: 80vh;
+  width: 100vw;
+}
+
+.carousel-inner{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  /* border: 2px solid #121212 ; */
+  
+}
+
+
+.carousel-item{
+  width: 100vw;
+  height:80vh;
+  
+}
+
+.carousel-item img{
+  width: 100vw;
+  height:80vh;
+  object-fit: cover;
+}
+
+.img-overlay{
+  position: relative;
+  top: -530px;
+
+  width: 100vw;
+  height:80vh;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+
+  z-index: 1;
+  /* border: 2px solid red ; */
+
+  color: #a0a9bc;
+  font-size:10vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  
+}
 
 /* music screen ends  */
+
+
+
+
 
 
 
@@ -494,6 +562,8 @@ body {
 
 
 /* music screen  */
+
+
 
 .music-background-wrapper{
   height: 50vh;
@@ -607,8 +677,9 @@ body {
   justify-content: center;
 }
 
+
 .projects-cardImg{
-  width: 13rem;
+  width:35vh;
 }
 
 
@@ -653,6 +724,7 @@ body {
 
 
 }
+
 
 
 
